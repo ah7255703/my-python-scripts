@@ -24,7 +24,7 @@ class Folder():
         Folder.dir_files(self)
         for item in self.files:
             try:
-                type = item.split('.')[1]
+                type = item.split('.')[-1]
                 if type not in self.__file_types:
                     self.__file_types.append(type)
             except:
